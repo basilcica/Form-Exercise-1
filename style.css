@@ -16,34 +16,111 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(2px);
+    position: relative;
 }
 
 form{
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px;
     background-color: rgba(180, 41, 41, 0.753);
-    border-radius: 5px;
+    border-radius: 8px;
+    padding: 30px 25px;
 }
 
 form input {
-    padding: 8px 14px;
+    padding: 12px 14px;
     font: size 16px;
     color: black;
     outline:none;
     border: none;
     border-radius: 10px;
     margin: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+form h1 {
+    color: aqua;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
 
 form input::placeholder{
     color: blue;
 }
 
-/* Assignment
 
-*/
+body::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(11, 11, 245, 0.699);
+    border:none;
+    color: #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+form p{
+    color:#ccc;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.social-buttons button{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.twitter-btn{
+    background-color: #3b5998;
+
+}
+
+.instagram-btn{
+    background-color: #e1306c;
+}
+
+form p a{
+    color: #2d9cdb;
+}
+
+.input-group{
+    position: relative;
+    width: 100%;
+}
+
+.input-group i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+
+.input-group input{
+    padding-left: 34px;
+}
